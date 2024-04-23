@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspeção em lojas</title>
+    <link rel="stylesheet" href="estrutura.css">
+    <link rel="stylesheet" href="app.py">
+</head>
+<body>
+    <Div id="titulo1">
+        <h1>Inspeção preventivas em lojas:</h1>
+    </Div>
+    <div id="titulo2">
+        <h2>Operações lojas âncoras,semi-âncoras e mega lojas.</h2>
+    </div>
+    <div id="titulo3">
+        <h3>Comunicamos que constatamos as irregularidades abaixo e solicitamos providências no sentido de regularizá-las.</h3><br>
+    </div>
+    <div id="titulo4">
+        <h3>DOCUMENTOS:</h3>
+    </div>
+
+<form>
+        <fieldset>
+            <div class="container_avcb">
+            <strong>
+                <label>AVCB n° processo:</label>&nbsp;
+                <input type="text" placeholder="Digite o n°">&nbsp;&nbsp;&nbsp;
+                <label>M²:</label>&nbsp;
+                <input type="text" placeholder="Informe a metragem">&nbsp;&nbsp;&nbsp;
+                <label>Validade:</label>
+                <input type="date">&nbsp;&nbsp;&nbsp;
+                <label>Situação:</label>
+                <select>
+                    <option value="Conforme">Conforme</option>
+                    <option value="Não Conforme">Não Conforme</option>
+                    <option value="Em processo">Em processo</option>
+                    <option value="Concessão">Concessão</option>
+                </select>&nbsp;&nbsp;&nbsp;&nbsp;
+                <label>Observações:</label>
+                <input id="observacoes" type="text" required placeholder="Digite aqui suas observações...">
+            </strong>
+            </div>
+</form><br>
+<form>
+
+            <div class="container_alvara_func">
+                <strong>
+                <label>Alvará de funcionamento e localização n°:</label>&nbsp;
+                <input type="text" placeholder="Digite o n°">&nbsp;&nbsp;&nbsp;
+                <label>Validade:</label>
+                <input type="date">&nbsp;&nbsp;&nbsp;
+                <label>Situação:</label>
+                <select>
+                    <option value="Conforme">Conforme</option>
+                    <option value="Não Conforme">Não Conforme</option>
+                    <option value="Conforme">Em processo</option>
+                    <option value="Vitalício">Vitalício</option>
+                    <option value="Concessão">Concessão</option>
+                </select>&nbsp;&nbsp;&nbsp;&nbsp;
+                <label>Observações:</label>
+                <input id="observacoes" type="text" required placeholder="Digite aqui suas observações...">
+                </strong>
+            </div>
+        
+</form><br>
+<form>
+            <div class="container_apolice">
+                <strong>
+                <label>Apólice de seguros n°:</label>&nbsp;
+                <input type="text" placeholder="Digite o n°">&nbsp;&nbsp;&nbsp;
+                <label>Vigência:</label>
+                <input type="date"> á <input type="date">&nbsp;&nbsp;&nbsp;&nbsp;
+                <label>Observações:</label>
+                <input id="observacoes" type="text" required placeholder="Digite aqui suas observações...">
+                </strong>
+            </div>
+        </fieldset>
+</form>
+
+    <div id="titulo4">
+        <h3>EXTINTORES:</h3>
+    </div>
+
+<form>
+    <fieldset>
+        <strong>
+        <div class="container_extintores">
+            <div id="container_AP">
+                <label>AP</label>
+                <input class="input_ext" type="text" required placeholder="Tota AP"><br>&nbsp;&nbsp;&nbsp;&nbsp;<input class="input_ext" type="text">10L
+            </div>
+            <div>
+                <label>PQS</label>
+                <input class="input_ext"type="text"  required placeholder="Total PQS"><br>&nbsp;&nbsp;&nbsp;&nbsp;<input class="input_ext" type="text">4kg&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;<input class="input_ext" type="text">6kg&nbsp;&nbsp;<br>&nbsp;&nbsp;<input class="input_ext" type="text">8kg&nbsp;&nbsp;<br>
+            </div>
+            <div>
+                <label>ABC</label>
+                <input class="input_ext"type="text" required placeholder="Total ABC"><br>&nbsp;&nbsp;&nbsp;&nbsp;<input class="input_ext" type="text">4kg&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;<input class="input_ext" type="text">6kg&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;<input class="input_ext" type="text">8kg&nbsp;&nbsp;&nbsp;<br>
+            </div>
+            <div id="container_CO²">
+                <label>CO²</label>
+                <input class="input_ext"type="text" required placeholder="Total CO²"><br>&nbsp;&nbsp;&nbsp;&nbsp;<input class="input_ext" type="text">6kg&nbsp;&nbsp;&nbsp;<br><br>
+            </div>
+            <div id="container_situacao">
+                <label>Situiação:</label>
+                <select>
+                    <option value="Conforme">Conforme</option>
+                    <p><option value=" Não conforme">Não conforme</option></p>&nbsp;&nbsp;&nbsp;
+                </select>&nbsp;&nbsp;&nbsp;<br><br>
+            </div> 
+            <div id="container_observacao"> 
+                <label>Observações:</label>
+                <input id="observacoes" type="text" required placeholder="Digite aqui suas observações...">
+            </div>
+        </div>
+        </strong>
+    </fieldset>
+</form>
+    <div id="titulo5">
+        <h3>HIDRANTES:</h3>
+    </div>
+<form>
+    <fieldset>
+        <strong>
+        <div class="container_hidrantes">  
+            <div>
+                <label>Quantidade:</label>
+                <input type="text"><br>
+                <label>Data do último teste hidrostático:</label>
+                <input type="date"><br>
+                <label>Há sinais de vazamento?</label>
+                <input type="radio">Sim.<input type="radio">Não.<br>
+                <label>O abrigo está equipado com: Chave storz, mangueira e esguicho?</label>
+                <input type="radio">Sim.<input type="radio">Não.<br>
+                <label>O abrigo está conforme a ABNT NBR 13714?</label>
+                <input type="radio">Sim.<input type="radio">Não.
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div>
+                <label>Situação:</label>
+                <select>
+                    <option value="Conforme">Conforme</option>
+                    <option value="Não conforme">Não conforme</option>
+                </select><br>
+                <label>Situação:</label>
+                <select>
+                    <option value="Conforme">Conforme</option>
+                    <option value="Não conforme">Não conforme</option>
+                </select><br>
+                <label>Situação:</label>
+                <select>
+                    <option value="Conforme">Conforme</option>
+                    <option value="Não conforme">Não conforme</option>
+                </select><br>
+                <label>Situação:</label>
+                <select>
+                    <option value="Conforme">Conforme</option>
+                    <option value="Não conforme">Não conforme</option>
+                </select><br>
+                <label>Situação:</label>
+                <select>
+                    <option value="Conforme">Conforme</option>
+                    <option value="Não conforme">Não conforme</option>
+                </select><br>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div> 
+                <label>Observações:</label>
+                <input id="observacoes" type="text" required placeholder="Digite aqui suas observações...">
+            </div>
+        </div>
+        </strong>
+    </fieldset>
+</form>
+    <div>
+        <p>NBR 13714, ítem 3.1 abrigo: Compartimento, embutido ou aparente, dotado de porta, destinado a armazenar mangueiras, esguichos, carretéis e outros equipamentos de combate a incêndio, capaz de proteger contra intempéries e danos diversos.</p>
+        <p>Ítem 4.7.1 As mangueiras de incêndio devem ser acondicionadas dentro dos abrigos: em ziguezague ou aduchadas conforme
+            especificado na NBR 12779, sendo que as mangueiras semi-rígidas podem ser acondicionadas enroladas, com ou sem o
+            uso de carretéis axiais ou em forma de oito, permitindo sua utilização com facilidade e rapidez.</p>
+        <p>4.7.2 No interior do abrigo pode ser instalada a válvula angular, desde que o seu manuseio e manutenção estejam garantidos</p>
+        <p>4.7.3 Os abrigos devem ser em cor vermelha, possuindo apoio ou fixação própria, independente da tubulação que abastece o hidrante ou mangotinho</p>
+        <p>4.7.4 Os abrigos não devem ter outro uso além daquele indicado nesta Norma</p>
+    </div>
+</body>
+
+</html>
